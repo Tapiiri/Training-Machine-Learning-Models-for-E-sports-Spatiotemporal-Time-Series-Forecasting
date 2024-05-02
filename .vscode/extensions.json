@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-python.python",   // General Python extension for VSCode
+        "ms-python.vscode-pylint",   // Pylint extension for linting Python code
+        "ms-python.autopep8",   // Autopep8 extension for formatting Python code
+        "ms-toolsai.jupyter"   // Jupyter extension for running Notebooks
+    ],
+    "unwantedRecommendations": []
+}
