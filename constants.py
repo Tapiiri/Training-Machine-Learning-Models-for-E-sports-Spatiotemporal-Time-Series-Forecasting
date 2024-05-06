@@ -1,4 +1,5 @@
 from enum import Enum
+from tkinter import NORMAL
 
 
 class DB_columns(Enum):
@@ -10,3 +11,8 @@ class DB_columns(Enum):
     TEAM = "team"
     GAME_ID = "game_id"
     COMPOUND_KEY = "compound_key"
+    NORMALIZED_POS_X = "normalized_pos_x"
+    NORMALIZED_POS_Z = "normalized_pos_z"
+
+
+GAME_AREA_WIDTH = 15000
