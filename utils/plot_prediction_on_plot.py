@@ -81,14 +81,21 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
     plot.set_ylim(smallest_y - padding, largest_y + padding)
     plot.set_title(title)
 
+    # Display the plot
+    plot.set_aspect('equal')
+    plot.invert_yaxis()
+    plot.invert_xaxis()
+    plot.axis('off')
+    plot.show()
 
-map_image_path = "assets/2x_2dlevelminimap.png"
+if __name__ == "__main__":
+    map_image_path = "assets/2x_2dlevelminimap.png"
 
-# zoom_range = compute_zoom_limits(all_players_all_games, 0)
-# print(zoom_range)
-zoom_range = ((75, 14350), (75, 14350))
+    # zoom_range = compute_zoom_limits(all_players_all_games, 0)
+    # print(zoom_range)
+    zoom_range = ((75, 14350), (75, 14350))
 
-i = slice(0, 1)
-print(y_test[i])
-plot_prediction_on_plot(
-    plt, X_test[i], y_test[i], y_test[i], map_image_path, zoom_range)
+    i = slice(0, 1)
+    print(y_test[i])
+    plot_prediction_on_plot(
+        plt, X_test[i], y_test[i], y_test[i], map_image_path, zoom_range)
