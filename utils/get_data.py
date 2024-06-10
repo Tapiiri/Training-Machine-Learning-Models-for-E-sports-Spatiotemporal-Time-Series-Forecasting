@@ -12,6 +12,7 @@ cache: Dict[str, Any] = {
     "counts": None
 }
 
+
 # Function to create cache table if it doesn't exist
 def create_cache_table(cursor):
     cursor.execute("""
@@ -24,6 +25,16 @@ def create_cache_table(cursor):
         )
     """)
     cursor.connection.commit()
+
+def clear_cache(cursor):
+    global cache
+    cache["unique_keys"] = None
+    cache["counts"] = None
+
+    # Clear cache table
+    cursor.execute("DELETE FROM count_cache")
+    cursor.connection.commit()
+
 
 # Function to fetch count from cache
 def fetch_count_from_cache(cursor, table_name, filter):
