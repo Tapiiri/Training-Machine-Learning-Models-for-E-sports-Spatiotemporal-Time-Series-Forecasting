@@ -12,7 +12,6 @@ cache: Dict[str, Any] = {
     "counts": None
 }
 
-
 # Function to create cache table if it doesn't exist
 def create_cache_table(cursor):
     cursor.execute("""
@@ -211,5 +210,5 @@ def fetch_data_batches(cursor, table_name, filter, offset, limit, data_features=
         if len(key_slice) > 0:
             rows_per_key[counts[i][1]].extend(key_slice)
     
-    print(f"Fetched {len(rows_per_key)} keys for offset: {offset}, limit: {limit}")    
+    print(f"Fetched {len(rows_per_key.keys())} keys for offset: {offset}, limit: {limit}")    
     return np.array(list(rows_per_key.values()), dtype=object)

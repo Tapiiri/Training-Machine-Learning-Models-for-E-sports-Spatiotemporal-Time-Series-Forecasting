@@ -33,8 +33,8 @@ def create_sequences_from_database_rows(data, H, T, max_H=None, max_T=None, batc
                 y_list.append(_y)
 
     if X_list and y_list:
-        X = np.concatenate(X_list, axis=0)
-        y = np.concatenate(y_list, axis=0)
+        X = np.array(X_list).reshape(-1, H, X_list[0].shape[2]).astype(np.float32)  
+        y = np.array(y_list).reshape(-1, y_list[0].shape[1]).astype(np.float32)
     else:
         X, y = np.array([]), np.array([])
 
