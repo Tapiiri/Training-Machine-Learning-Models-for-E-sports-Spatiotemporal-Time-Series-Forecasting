@@ -6,11 +6,11 @@ from constants import DEFAULT_DATA_FEATURES
 from utils.get_data import fetch_data_batches
 from utils.create_sequences_in_batches import create_sequences_from_database_rows
 from sklearn.metrics import mean_squared_error, r2_score, root_mean_squared_error  # type: ignore
-
+from sklearn.model_selection import train_test_split
 
 def compare_models(database_file, table_name, H_values, T_values, model_getters, data_features=DEFAULT_DATA_FEATURES, filter="1=1", total_keys_to_fetch=100, batch_size=20, train=True):
     absolute_errors = defaultdict(list)
-    rmse_results = defaultdict(int)
+    mse_results = defaultdict(list)
     trained_models = {}
     max_H = max(H_values)
     max_T = max(T_values)
@@ -39,7 +39,9 @@ def compare_models(database_file, table_name, H_values, T_values, model_getters,
                 # Calculate the sequence on the fly
                 sequence = create_sequences_from_database_rows(
                     data, H, T, max_H, max_T)
-                X_train, y_train = sequence
+                X, y = sequence
+                X_train, X_test, y_train, y_test = train_test_split(
+                    X, y, test_size=0.2, train_size=0.8, shuffle=True)
                 if X_train.size == 0 or y_train.size == 0:
                     print(f'No data for H={H}, T={T}')
                     pbar.update(len(model_getters))
@@ -53,11 +55,14 @@ def compare_models(database_file, table_name, H_values, T_values, model_getters,
                         data_features.index(feature) for feature in features]]
                     X_train_reshaped = X_train_features.reshape(input_shape)
                     model.fit(X_train_reshaped, y_train)
-                    y_pred = model.predict(X_train_reshaped)
-                    rmse = np.sqrt(mean_squared_error(y_train, y_pred))
-                    rmse_results[(H, T, model_name)] += rmse
-                    absolute_errors[(H, T, model_name)] = np.abs(
-                        y_train - y_pred)
+                    X_test_features = X_test[:, :, [
+                        data_features.index(feature) for feature in features]].reshape(input_shape)
+                    X_test_reshaped = X_test_features.reshape(input_shape)
+                    y_pred = model.predict(X_test_reshaped)
+                    mse = np.sqrt(mean_squared_error(y_test, y_pred))
+                    mse_results[(H, T, model_name)] += [mse]
+                    absolute_errors[(H, T, model_name)] = [np.abs(
+                        y_test - y_pred)]
                     if train:
                         trained_models[(H, T, model_name)] = model
                     pbar.update(1)
@@ -68,4 +73,4 @@ def compare_models(database_file, table_name, H_values, T_values, model_getters,
 
     pbar.close()
     conn.close()
-    return trained_models, rmse_results, absolute_errors
+    return trained_models, mse_results, absolute_errors

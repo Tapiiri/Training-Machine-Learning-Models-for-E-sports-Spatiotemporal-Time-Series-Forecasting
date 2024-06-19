@@ -1,6 +1,7 @@
 from utils.compute_zoom_limits import compute_zoom_limits
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+import numpy as np
 
 
 def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoom_range, options={}):
@@ -86,7 +87,8 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
     plot.invert_yaxis()
     plot.invert_xaxis()
     plot.axis('off')
-    plot.show()
+    if not hasattr(plot, 'gca'):
+        plot.show()
 
 if __name__ == "__main__":
     map_image_path = "assets/2x_2dlevelminimap.png"

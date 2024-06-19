@@ -8,7 +8,7 @@ def create_sequences(rows, H, T):
     if num_sequences <= 0:
         return np.array([]), np.array([])
 
-    X = np.lib.stride_tricks.sliding_window_view( # type: ignore
+    X = np.lib.stride_tricks.sliding_window_view(  # type: ignore
         rows, window_shape=(H, rows.shape[1]))[:-T]
     X = X.reshape(X.shape[0], H, -1)
     y = rows[H+T-1:num_sequences+H+T-1]
@@ -19,6 +19,9 @@ def create_sequences(rows, H, T):
 def create_sequences_from_database_rows(data, H, T, max_H=None, max_T=None, batch_size=1000):
     max_H = max_H or H
     max_T = max_T or T
+
+    max_row_amount = min([len(rows) for rows in data])
+
     X_list, y_list = [], []
     for i in range(0, len(data), batch_size):
         batch = data[i:i+batch_size]
@@ -26,14 +29,16 @@ def create_sequences_from_database_rows(data, H, T, max_H=None, max_T=None, batc
             if len(rows) < H + T:
                 continue
             # Ensure all sequences are from the same points in time
-            equilength_rows = np.array(rows)[max_H-H:-(max_T-T+1)]
+            equilength_rows = np.array(rows[:max_row_amount])[
+                max_H-H:-(max_T-T+1)]
             _X, _y = create_sequences(equilength_rows, H, T)
             if _X.size > 0 and _y.size > 0:
                 X_list.append(_X)
                 y_list.append(_y)
 
     if X_list and y_list:
-        X = np.array(X_list).reshape(-1, H, X_list[0].shape[2]).astype(np.float32)  
+        X = np.array(X_list).reshape(-1, H,
+                                     X_list[0].shape[2]).astype(np.float32)
         y = np.array(y_list).reshape(-1, y_list[0].shape[1]).astype(np.float32)
     else:
         X, y = np.array([]), np.array([])
