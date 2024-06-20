@@ -37,7 +37,7 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
     inputPointsColor = options.get('inputPointsColor', 'blue')
     predictionPointsColor = options.get('predictionPointsColor', 'red')
     truthPointsColor = options.get('truthPointsColor', 'green')
-    padding = options.get('padding', 500)
+    padding = options.get('padding', 0.1)
 
     # If plot is a subplot, clear
     if hasattr(plot, 'clear'):
@@ -58,10 +58,16 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
     for player in prediction:
         plot.plot(player[1], player[0], markersize=predictionPointsSize,
                   alpha=0.6, color=predictionPointsColor, marker='o')
+    # Label the last prediction with the position
+    plot.text(prediction[-1][1], prediction[-1][0], f'P({prediction[-1][1]:.2f}, {prediction[-1][0]:.2f})',
+              fontsize=8, color=predictionPointsColor)
 
     for player in truth:
         plot.plot(player[1], player[0], markersize=truthPointsSize,
                   alpha=0.6, color=truthPointsColor, marker='o')
+    # Label the last truth with the position
+    plot.text(truth[-1][1], truth[-1][0], f'T ({truth[-1][1]:.2f}, {truth[-1][0]:.2f})',
+              fontsize=8, color=truthPointsColor)
 
     point_sequence_as_points = np.array([(point_sequence[i-1], point_sequence[i])
                                         for point_sequence in points for i in range(1, len(point_sequence), 2)])
@@ -76,20 +82,27 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
 
     # Set the limits of the plot differently for plot and subplot
     if hasattr(plot, 'gca'):
-        plot = plot.gca()
+        plot.gca().set_xlim(smallest_x - padding, largest_x + padding)
+        plot.gca().set_ylim(smallest_y - padding, largest_y + padding)
+        plot.gca().set_title(title)
 
-    plot.set_xlim(smallest_x - padding, largest_x + padding)
-    plot.set_ylim(smallest_y - padding, largest_y + padding)
-    plot.set_title(title)
-
-    # Display the plot
-    plot.set_aspect('equal')
-    plot.invert_yaxis()
-    plot.invert_xaxis()
-    plot.axis('off')
-    if not hasattr(plot, 'gca'):
+        # Display the plot
+        plot.gca().set_aspect('equal')
+        plot.gca().invert_yaxis()
+        plot.gca().invert_xaxis()
+        plot.gca().axis('off')
         plot.show()
+    else:
+        plot.set_xlim(smallest_x - padding, largest_x + padding)
+        plot.set_ylim(smallest_y - padding, largest_y + padding)
+        plot.set_title(title)
 
+        # Display the plot
+        plot.set_aspect('equal')
+        plot.invert_yaxis()
+        plot.invert_xaxis()
+        plot.axis('off')
+    
 if __name__ == "__main__":
     map_image_path = "assets/2x_2dlevelminimap.png"
 

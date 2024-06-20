@@ -5,7 +5,7 @@ from tqdm import tqdm
 from constants import DEFAULT_DATA_FEATURES
 from utils.get_data import fetch_data_batches
 from utils.create_sequences_in_batches import create_sequences_from_database_rows
-from sklearn.metrics import mean_squared_error, r2_score, root_mean_squared_error  # type: ignore
+from sklearn.metrics import mean_squared_error  # type: ignore
 from sklearn.model_selection import train_test_split
 
 def compare_models(database_file, table_name, H_values, T_values, model_getters, data_features=DEFAULT_DATA_FEATURES, filter="1=1", total_keys_to_fetch=100, batch_size=20, train=True):

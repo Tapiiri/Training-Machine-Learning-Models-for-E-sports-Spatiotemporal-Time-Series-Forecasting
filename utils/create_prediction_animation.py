@@ -1,6 +1,8 @@
 # Show the first 5 predictions in an animation
 from matplotlib.animation import FuncAnimation
 from IPython.display import HTML
+import matplotlib.pyplot as plt
+from utils.plot_prediction_on_plot import plot_prediction_on_plot
 
 
 def create_prediction_animation(points, prediction, truth, map_image_path, zoom_range, options={}):
@@ -38,15 +40,3 @@ def create_prediction_animation(points, prediction, truth, map_image_path, zoom_
     ani = FuncAnimation(fig, update, frames=range(
         len(points)), interval=speed, blit=False)
     return HTML(ani.to_jshtml())
-
-
-options = {
-    'speed': 200,
-    'predictionPointsSize': 20,
-    'truthPointsSize': 20,
-    'inputPointsSize': 20,
-}
-
-frame_count = 100
-create_prediction_animation(X_test[:frame_count], y_test[:frame_count], y_test[:frame_count],
-                            map_image_path, zoom_range, options)
