@@ -14,8 +14,10 @@ class DB_columns(Enum):
     NORMALIZED_POS_X = "normalized_pos_x"
     NORMALIZED_POS_Z = "normalized_pos_z"
     NORMALIZED_TIME = "normalized_time"
+    NORMALIZED_HP = "normalized_hp"
 
 DEFAULT_DATA_FEATURES = [DB_columns.NORMALIZED_POS_X.value, DB_columns.NORMALIZED_POS_Z.value]
 
 GAME_AREA_WIDTH = 15000
 MAX_TIME = 180
+MAX_HP = 10000

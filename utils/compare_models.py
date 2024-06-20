@@ -59,7 +59,8 @@ def compare_models(database_file, table_name, H_values, T_values, model_getters,
                         data_features.index(feature) for feature in features]].reshape(input_shape)
                     X_test_reshaped = X_test_features.reshape(input_shape)
                     y_pred = model.predict(X_test_reshaped)
-                    mse = np.sqrt(mean_squared_error(y_test, y_pred))
+                    # Only use the first two values of the last dimension for mse
+                    mse = mean_squared_error(y_test, y_pred)
                     mse_results[(H, T, model_name)] += [mse]
                     absolute_errors[(H, T, model_name)] = [np.abs(
                         y_test - y_pred)]

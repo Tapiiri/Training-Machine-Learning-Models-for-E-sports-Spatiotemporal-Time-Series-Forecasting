@@ -11,7 +11,7 @@ def create_sequences(rows, H, T):
     X = np.lib.stride_tricks.sliding_window_view(  # type: ignore
         rows, window_shape=(H, rows.shape[1]))[:-T]
     X = X.reshape(X.shape[0], H, -1)
-    y = rows[H+T-1:num_sequences+H+T-1]
+    y = rows[H+T-1:num_sequences+H+T-1][:, :2]
 
     return X, y
 
