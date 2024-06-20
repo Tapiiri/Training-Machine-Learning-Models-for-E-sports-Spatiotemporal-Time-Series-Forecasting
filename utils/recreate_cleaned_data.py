@@ -4,7 +4,7 @@ from constants import DB_columns
 from utils.create_compound_key_and_index import create_compound_key_and_index
 from utils.get_data import clear_cache
 
-from constants import GAME_AREA_WIDTH, MAX_TIME
+from constants import GAME_AREA_WIDTH, MAX_TIME, MAX_HP
 
 def recreate_cleaned_data(database_file, table_name):
     conn = sqlite3.connect(database_file)
@@ -42,6 +42,9 @@ def recreate_cleaned_data(database_file, table_name):
 
         f"ALTER TABLE {table_name} ADD COLUMN {DB_columns.NORMALIZED_TIME.value} FLOAT GENERATED ALWAYS AS ({DB_columns.TIME.value} / {MAX_TIME}) STORED")
 
+    cursor.execute(
+            
+            f"ALTER TABLE {table_name} ADD COLUMN {DB_columns.NORMALIZED_HP.value} FLOAT GENERATED ALWAYS AS ({DB_columns.HP.value} / {MAX_HP}) STORED")
     conn.commit()
 
     conn.close()
