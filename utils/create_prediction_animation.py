@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from utils.plot_prediction_on_plot import plot_prediction_on_plot
 
 
-def create_prediction_animation(points, prediction, truth, map_image_path, zoom_range, options={}):
+def create_prediction_animation(points, prediction, truth, map_image_path, zoom_range, options={}, animation_options={}):
     """
     Create an animation of the player positions and future predictions on the map.
 
@@ -25,6 +25,7 @@ def create_prediction_animation(points, prediction, truth, map_image_path, zoom_
         - predictionPointsColor (str[]): Array of colors for the prediction points
         - truthPointsColor (str[]): Array of colors for the truth points
         - padding (int): The padding to add to the zoom range
+    animation_options (dict): Additional options for the animation:
         - speed (int): The speed of the animation
     """
     fig, ax = plt.subplots()
@@ -32,10 +33,11 @@ def create_prediction_animation(points, prediction, truth, map_image_path, zoom_
     def update(frame):
         i = slice(frame, frame+1)
         ax.clear()
+        plot_options = options if type(options) is not list else options[frame]
         plot_prediction_on_plot(
-            ax, points[i], prediction[i], truth[i], map_image_path, zoom_range, options)
+            ax, points[i], prediction[i], truth[i], map_image_path, zoom_range, plot_options)
     # Variable to control animation speed
-    speed = options.get('speed', 1000)
+    speed = animation_options.get('speed', 1000)
 
     ani = FuncAnimation(fig, update, frames=range(
         len(points)), interval=speed, blit=False)
