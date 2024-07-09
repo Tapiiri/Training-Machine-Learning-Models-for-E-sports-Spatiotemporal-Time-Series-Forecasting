@@ -112,11 +112,7 @@ def get_data_by_compound_key(cursor, table_name, offset, limit, filter, data_fea
     return cursor.execute(query).fetchall()
 
 def fetch_data_batches(cursor, table_name, filter, offset, limit, data_features=DEFAULT_DATA_FEATURES):
-    counts = get_counts(cursor, table_name, filter, limit=limit, offset=offset)
-    
-    if not counts:
-        print(f"No counts returned for offset: {offset}, limit: {limit}")
-        return defaultdict(list)
+    counts = get_counts(cursor, table_name, filter, limit=limit+offset, offset=0)
     
     offsets = []
     cumulative_sum = 0
@@ -126,9 +122,9 @@ def fetch_data_batches(cursor, table_name, filter, offset, limit, data_features=
     offsets.append(cumulative_sum)
     
     rows_per_key = defaultdict(list)
-    all_rows = get_data_by_compound_key(cursor, table_name, offsets[0], cumulative_sum, filter, data_features)
+    all_rows = get_data_by_compound_key(cursor, table_name, offsets[offset], cumulative_sum, filter, data_features)
     
-    for i in range(len(counts)):
+    for i in range(len(counts))[offset:offset+limit]:
         result_offset = offsets[i]
         result_count = counts[i][0]
         key_slice = all_rows[result_offset:result_offset + result_count]
