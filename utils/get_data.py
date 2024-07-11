@@ -112,24 +112,27 @@ def get_data_by_compound_key(cursor, table_name, offset, limit, filter, data_fea
     return cursor.execute(query).fetchall()
 
 def fetch_data_batches(cursor, table_name, filter, offset, limit, data_features=DEFAULT_DATA_FEATURES):
-    counts = get_counts(cursor, table_name, filter, limit=limit+offset, offset=0)
+    counts = get_counts(cursor, table_name, filter, limit=offset+limit, offset=0)
     
     offsets = []
     cumulative_sum = 0
     for count in counts:
         offsets.append(cumulative_sum)
         cumulative_sum += count[0]
-    offsets.append(cumulative_sum)
     
     rows_per_key = defaultdict(list)
-    all_rows = get_data_by_compound_key(cursor, table_name, offsets[offset], cumulative_sum, filter, data_features)
+    total_row_offset = offsets[offset]
+    total_row_limit = cumulative_sum - total_row_offset
+    all_rows = get_data_by_compound_key(cursor, table_name, total_row_offset, total_row_limit, filter, data_features)
+    print(len(all_rows))
+    print(np.unique([row[4] for row in all_rows]))
     
     for i in range(len(counts))[offset:offset+limit]:
-        result_offset = offsets[i]
+        result_offset = offsets[i] - total_row_offset
         result_count = counts[i][0]
         key_slice = all_rows[result_offset:result_offset + result_count]
         if len(key_slice) > 0:
             rows_per_key[counts[i][1]].extend(key_slice)
-    
+
     print(f"Fetched {len(rows_per_key.keys())} keys for offset: {offset}, limit: {limit}")    
     return np.array(list(rows_per_key.values()), dtype=object)
