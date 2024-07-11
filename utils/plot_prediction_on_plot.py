@@ -2,6 +2,19 @@ from utils.compute_zoom_limits import compute_zoom_limits
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import json
+
+def load_champion_icon(champion_class, denormalization_data_path, icons_folder):
+    with open(denormalization_data_path, 'r') as file:
+        data = json.load(file)
+    champion_mapping = data.get('champion_mapping', {})
+    
+    for champ_name, champ_class in champion_mapping.items():
+        if champ_class == champion_class:
+            icon_path = f"{icons_folder}/{champ_name.lower()}.png"
+            return mpimg.imread(icon_path)
+    return None
 
 def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoom_range, options={}):
     """
@@ -14,6 +27,7 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
         truth (np.array): The true future player positions (x, y)
         map_image_path (str): The path to the map image
         zoom_range (tuple): The x and y limits to zoom in to
+        icon_path (str): The path to the icon image
         options (dict): Additional options for the plot
     """
     if not len(prediction) or not len(truth):
@@ -29,6 +43,7 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
     prediction_points_color = options.get('predictionPointsColor', 'red')
     truth_points_color = options.get('truthPointsColor', 'green')
     padding = options.get('padding', 0.1)
+    icon_size = options.get('iconSize', (30, 30))  # Icon size
 
     # Clear the plot if it is a subplot
     if hasattr(plot, 'clear'):
@@ -47,14 +62,32 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
                       fontsize=8, color=color)
     
     for player_sequence in points:
-        plot_positions([(player_sequence[i-1], player_sequence[i]) for i in range(1, len(player_sequence), 2)], 
-                       input_points_size, input_points_color)
+        plot_positions(player_sequence[:, :2], input_points_size, input_points_color)
     
     plot_positions(prediction, prediction_points_size, prediction_points_color, 'P')
     plot_positions(truth, truth_points_size, truth_points_color, 'T')
 
+    denormalization_data_path = "old_denormalization_data.json"
+    icons_folder = "champion_icons"
+
+    # Get the champion class for the latest history sequence
+    champion_class = player_sequence[-1][2]
+    icon_img = load_champion_icon(champion_class, denormalization_data_path, icons_folder)
+
+    def add_icon(ax, position, image, zoom):
+        im = OffsetImage(image, zoom=zoom)
+        ab = AnnotationBbox(im, (position[1], position[0]), frameon=False, xycoords='data')
+        ax.add_artist(ab)
+
+    # Add icon to the latest prediction point
+    if icon_img is not None:
+        if hasattr(plot, 'gca'):
+            add_icon(plot.gca(), player_sequence[-1], icon_img, zoom=icon_size[0]/100)
+        else:
+            add_icon(plot, player_sequence[-1], icon_img, zoom=icon_size[0]/100)
+            
     # Determine zoom limits
-    all_points = np.vstack([(point_sequence[i-1], point_sequence[i]) for point_sequence in points for i in range(1, len(point_sequence), 2)] + [prediction, truth])
+    all_points = np.vstack([point[:2] for point_sequence in points for point in point_sequence] + [prediction] + [truth])
     smallest_x, largest_x = np.min(all_points[:, 1]), np.max(all_points[:, 1])
     smallest_y, largest_y = np.min(all_points[:, 0]), np.max(all_points[:, 0])
 
@@ -73,10 +106,3 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
         plot.show()
     else:
         set_plot_properties(plot)
-        
-if __name__ == "__main__":
-    map_image_path = "assets/2x_2dlevelminimap.png"
-    zoom_range = ((75, 14350), (75, 14350))
-
-    i = slice(0, 1)
-    plot_prediction_on_plot(plt, X_test[i], y_test[i], y_test[i], map_image_path, zoom_range)

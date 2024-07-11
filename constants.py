@@ -15,6 +15,7 @@ class DB_columns(Enum):
     NORMALIZED_POS_Z = "normalized_pos_z"
     NORMALIZED_TIME = "normalized_time"
     NORMALIZED_HP = "normalized_hp"
+    NORMALIZED_NAME = "normalized_name"
 
 DEFAULT_DATA_FEATURES = [DB_columns.NORMALIZED_POS_X.value, DB_columns.NORMALIZED_POS_Z.value]
 

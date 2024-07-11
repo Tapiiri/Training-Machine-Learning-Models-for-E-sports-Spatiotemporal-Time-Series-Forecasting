@@ -16,6 +16,7 @@ def get_or_create_combined_database(database_folder):
     database_files = []
     for file in os.listdir(database_folder):
         if file.endswith(".db"):
+            print(file)
             database_files.append(os.path.join(database_folder, file))
 
     if len(database_files) == 0:

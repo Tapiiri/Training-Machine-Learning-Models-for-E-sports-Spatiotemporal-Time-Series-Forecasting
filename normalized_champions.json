@@ -1,0 +1,1338 @@
+[
+    {
+        "Champion": 266,
+        "Classes": 0,
+        "Release Date": 0.2905027932960894,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 103,
+        "Classes": 1,
+        "Release Date": 0.18994413407821228,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 84,
+        "Classes": 2,
+        "Release Date": 0.08379888268156424,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 166,
+        "Classes": 3,
+        "Release Date": 0.8324022346368715,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 12,
+        "Classes": 4,
+        "Release Date": 0.0,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 32,
+        "Classes": 4,
+        "Release Date": 0.0223463687150838,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 34,
+        "Classes": 5,
+        "Release Date": 0.027932960893854747,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 1,
+        "Classes": 1,
+        "Release Date": 0.0,
+        "Last Changed": 14.2,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 523,
+        "Classes": 6,
+        "Release Date": 0.7262569832402235,
+        "Last Changed": 14.05,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 22,
+        "Classes": 6,
+        "Release Date": 0.0,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 136,
+        "Classes": 5,
+        "Release Date": 0.4748603351955307,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 268,
+        "Classes": 7,
+        "Release Date": 0.3743016759776536,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 432,
+        "Classes": 8,
+        "Release Date": 0.40782122905027934,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 200,
+        "Classes": 9,
+        "Release Date": 0.8938547486033519,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 53,
+        "Classes": 8,
+        "Release Date": 0.03910614525139665,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 63,
+        "Classes": 1,
+        "Release Date": 0.1452513966480447,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 201,
+        "Classes": 10,
+        "Release Date": 0.35195530726256985,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 233,
+        "Classes": 11,
+        "Release Date": 0.9776536312849162,
+        "Last Changed": 14.45,
+        "Blue Essence": 1.0,
+        "RP": 1.0
+    },
+    {
+        "Champion": 51,
+        "Classes": 6,
+        "Release Date": 0.12849162011173185,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 164,
+        "Classes": 11,
+        "Release Date": 0.5251396648044693,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 69,
+        "Classes": 5,
+        "Release Date": 0.12290502793296089,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 31,
+        "Classes": 7,
+        "Release Date": 0.0223463687150838,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 42,
+        "Classes": 6,
+        "Release Date": 0.03910614525139665,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 122,
+        "Classes": 0,
+        "Release Date": 0.21787709497206703,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 131,
+        "Classes": 12,
+        "Release Date": 0.2346368715083799,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 36,
+        "Classes": 0,
+        "Release Date": 0.03910614525139665,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 119,
+        "Classes": 6,
+        "Release Date": 0.22346368715083798,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 245,
+        "Classes": 2,
+        "Release Date": 0.41899441340782123,
+        "Last Changed": 13.8,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 60,
+        "Classes": 11,
+        "Release Date": 0.24581005586592178,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 28,
+        "Classes": 2,
+        "Release Date": 0.01675977653631285,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 81,
+        "Classes": 6,
+        "Release Date": 0.07262569832402235,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 9,
+        "Classes": 7,
+        "Release Date": 0.0,
+        "Last Changed": 14.2,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 114,
+        "Classes": 9,
+        "Release Date": 0.2011173184357542,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 105,
+        "Classes": 2,
+        "Release Date": 0.18435754189944134,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 3,
+        "Classes": 10,
+        "Release Date": 0.1005586592178771,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 41,
+        "Classes": 7,
+        "Release Date": 0.0335195530726257,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 86,
+        "Classes": 0,
+        "Release Date": 0.0782122905027933,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 150,
+        "Classes": 7,
+        "Release Date": 0.3687150837988827,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 79,
+        "Classes": 4,
+        "Release Date": 0.0670391061452514,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 104,
+        "Classes": 7,
+        "Release Date": 0.1787709497206704,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 887,
+        "Classes": 9,
+        "Release Date": 0.8156424581005587,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 120,
+        "Classes": 11,
+        "Release Date": 0.2122905027932961,
+        "Last Changed": 14.05,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 74,
+        "Classes": 7,
+        "Release Date": 0.0446927374301676,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 910,
+        "Classes": 13,
+        "Release Date": 0.994413407821229,
+        "Last Changed": 14.55,
+        "Blue Essence": 1.0,
+        "RP": 1.0
+    },
+    {
+        "Champion": 420,
+        "Classes": 0,
+        "Release Date": 0.45251396648044695,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 39,
+        "Classes": 11,
+        "Release Date": 0.11731843575418995,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 427,
+        "Classes": 8,
+        "Release Date": 0.5139664804469274,
+        "Last Changed": 14.25,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 40,
+        "Classes": 14,
+        "Release Date": 0.03910614525139665,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 59,
+        "Classes": 11,
+        "Release Date": 0.13966480446927373,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 24,
+        "Classes": 9,
+        "Release Date": 0.0,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 126,
+        "Classes": 13,
+        "Release Date": 0.22905027932960895,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 202,
+        "Classes": 15,
+        "Release Date": 0.4692737430167598,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.6827350427350427,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 222,
+        "Classes": 6,
+        "Release Date": 0.3128491620111732,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 897,
+        "Classes": 16,
+        "Release Date": 0.9217877094972067,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 145,
+        "Classes": 6,
+        "Release Date": 0.6089385474860335,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 429,
+        "Classes": 6,
+        "Release Date": 0.3854748603351955,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 43,
+        "Classes": 17,
+        "Release Date": 0.1340782122905028,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 30,
+        "Classes": 5,
+        "Release Date": 0.0223463687150838,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 38,
+        "Classes": 2,
+        "Release Date": 0.0335195530726257,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 55,
+        "Classes": 2,
+        "Release Date": 0.03910614525139665,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 10,
+        "Classes": 7,
+        "Release Date": 0.0,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.0
+    },
+    {
+        "Champion": 141,
+        "Classes": 9,
+        "Release Date": 0.5642458100558659,
+        "Last Changed": 14.35,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 85,
+        "Classes": 7,
+        "Release Date": 0.0782122905027933,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 121,
+        "Classes": 2,
+        "Release Date": 0.24022346368715083,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 203,
+        "Classes": 6,
+        "Release Date": 0.44692737430167595,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 240,
+        "Classes": 9,
+        "Release Date": 0.5027932960893855,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 96,
+        "Classes": 6,
+        "Release Date": 0.0893854748603352,
+        "Last Changed": 14.35,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 7,
+        "Classes": 1,
+        "Release Date": 0.11731843575418995,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 64,
+        "Classes": 11,
+        "Release Date": 0.1452513966480447,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 89,
+        "Classes": 4,
+        "Release Date": 0.16201117318435754,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 876,
+        "Classes": 9,
+        "Release Date": 0.7653631284916201,
+        "Last Changed": 14.25,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 127,
+        "Classes": 1,
+        "Release Date": 0.27932960893854747,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 236,
+        "Classes": 6,
+        "Release Date": 0.3016759776536313,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 117,
+        "Classes": 14,
+        "Release Date": 0.20670391061452514,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 99,
+        "Classes": 18,
+        "Release Date": 0.11173184357541899,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 54,
+        "Classes": 4,
+        "Release Date": 0.03910614525139665,
+        "Last Changed": 13.4,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 90,
+        "Classes": 5,
+        "Release Date": 0.0893854748603352,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 57,
+        "Classes": 4,
+        "Release Date": 0.1340782122905028,
+        "Last Changed": 14.25,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 11,
+        "Classes": 9,
+        "Release Date": 0.0,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 902,
+        "Classes": 14,
+        "Release Date": 0.9441340782122905,
+        "Last Changed": 14.45,
+        "Blue Essence": 1.0,
+        "RP": 1.0
+    },
+    {
+        "Champion": 21,
+        "Classes": 6,
+        "Release Date": 0.10614525139664804,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 82,
+        "Classes": 0,
+        "Release Date": 0.0670391061452514,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 25,
+        "Classes": 8,
+        "Release Date": 0.0,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 950,
+        "Classes": 2,
+        "Release Date": 0.9664804469273743,
+        "Last Changed": 14.6,
+        "Blue Essence": 1.0,
+        "RP": 1.0
+    },
+    {
+        "Champion": 267,
+        "Classes": 14,
+        "Release Date": 0.2569832402234637,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 75,
+        "Classes": 0,
+        "Release Date": 0.0446927374301676,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 111,
+        "Classes": 4,
+        "Release Date": 0.2011173184357542,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 518,
+        "Classes": 19,
+        "Release Date": 0.659217877094972,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 76,
+        "Classes": 7,
+        "Release Date": 0.055865921787709494,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 895,
+        "Classes": 9,
+        "Release Date": 0.8994413407821229,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 56,
+        "Classes": 2,
+        "Release Date": 0.13966480446927373,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 20,
+        "Classes": 4,
+        "Release Date": 0.0,
+        "Last Changed": 13.95,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 2,
+        "Classes": 11,
+        "Release Date": 0.0893854748603352,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 61,
+        "Classes": 1,
+        "Release Date": 0.1564245810055866,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 516,
+        "Classes": 4,
+        "Release Date": 0.5698324022346368,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 80,
+        "Classes": 11,
+        "Release Date": 0.0670391061452514,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 78,
+        "Classes": 10,
+        "Release Date": 0.061452513966480445,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 555,
+        "Classes": 20,
+        "Release Date": 0.6201117318435754,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 246,
+        "Classes": 2,
+        "Release Date": 0.6927374301675978,
+        "Last Changed": 14.05,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 133,
+        "Classes": 7,
+        "Release Date": 0.2737430167597765,
+        "Last Changed": 14.2,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 497,
+        "Classes": 8,
+        "Release Date": 0.547486033519553,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 33,
+        "Classes": 4,
+        "Release Date": 0.027932960893854747,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 421,
+        "Classes": 11,
+        "Release Date": 0.39106145251396646,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 526,
+        "Classes": 4,
+        "Release Date": 0.7932960893854749,
+        "Last Changed": 14.35,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 888,
+        "Classes": 14,
+        "Release Date": 0.8715083798882681,
+        "Last Changed": 14.35,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 58,
+        "Classes": 11,
+        "Release Date": 0.12849162011173185,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 107,
+        "Classes": 12,
+        "Release Date": 0.2346368715083799,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 92,
+        "Classes": 9,
+        "Release Date": 0.17318435754189945,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 68,
+        "Classes": 5,
+        "Release Date": 0.1452513966480447,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 13,
+        "Classes": 5,
+        "Release Date": 0.0,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.0
+    },
+    {
+        "Champion": 360,
+        "Classes": 6,
+        "Release Date": 0.776536312849162,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 113,
+        "Classes": 4,
+        "Release Date": 0.19553072625698323,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 235,
+        "Classes": 21,
+        "Release Date": 0.7206703910614525,
+        "Last Changed": 14.35,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 147,
+        "Classes": 17,
+        "Release Date": 0.7821229050279329,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 875,
+        "Classes": 0,
+        "Release Date": 0.7318435754189944,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 35,
+        "Classes": 2,
+        "Release Date": 0.0446927374301676,
+        "Last Changed": 14.15,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 98,
+        "Classes": 10,
+        "Release Date": 0.07262569832402235,
+        "Last Changed": 14.3,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 102,
+        "Classes": 0,
+        "Release Date": 0.18435754189944134,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 27,
+        "Classes": 7,
+        "Release Date": 0.0111731843575419,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.0
+    },
+    {
+        "Champion": 14,
+        "Classes": 4,
+        "Release Date": 0.0,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 15,
+        "Classes": 6,
+        "Release Date": 0.0,
+        "Last Changed": 14.25,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 72,
+        "Classes": 4,
+        "Release Date": 0.16759776536312848,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 901,
+        "Classes": 6,
+        "Release Date": 1.0,
+        "Last Changed": 14.6,
+        "Blue Essence": 1.0,
+        "RP": 1.0
+    },
+    {
+        "Champion": 37,
+        "Classes": 14,
+        "Release Date": 0.10614525139664804,
+        "Last Changed": 14.35,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 16,
+        "Classes": 14,
+        "Release Date": 0.0,
+        "Last Changed": 14.2,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 50,
+        "Classes": 5,
+        "Release Date": 0.11173184357541899,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 517,
+        "Classes": 22,
+        "Release Date": 0.664804469273743,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 134,
+        "Classes": 1,
+        "Release Date": 0.24022346368715083,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 223,
+        "Classes": 10,
+        "Release Date": 0.4301675977653631,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 163,
+        "Classes": 5,
+        "Release Date": 0.4860335195530726,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 91,
+        "Classes": 2,
+        "Release Date": 0.16759776536312848,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 44,
+        "Classes": 23,
+        "Release Date": 0.0335195530726257,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 17,
+        "Classes": 7,
+        "Release Date": 0.0,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 412,
+        "Classes": 8,
+        "Release Date": 0.26256983240223464,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 18,
+        "Classes": 6,
+        "Release Date": 0.0,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 48,
+        "Classes": 0,
+        "Release Date": 0.12290502793296089,
+        "Last Changed": 14.25,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 23,
+        "Classes": 9,
+        "Release Date": 0.01675977653631285,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 4,
+        "Classes": 1,
+        "Release Date": 0.0,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 29,
+        "Classes": 6,
+        "Release Date": 0.01675977653631285,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 77,
+        "Classes": 0,
+        "Release Date": 0.055865921787709494,
+        "Last Changed": 14.15,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 6,
+        "Classes": 0,
+        "Release Date": 0.1005586592178771,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 110,
+        "Classes": 24,
+        "Release Date": 0.21787709497206703,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 67,
+        "Classes": 6,
+        "Release Date": 0.15083798882681565,
+        "Last Changed": 14.3,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 45,
+        "Classes": 1,
+        "Release Date": 0.027932960893854747,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 161,
+        "Classes": 13,
+        "Release Date": 0.33519553072625696,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 711,
+        "Classes": 1,
+        "Release Date": 0.8435754189944135,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 254,
+        "Classes": 11,
+        "Release Date": 0.2569832402234637,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 234,
+        "Classes": 9,
+        "Release Date": 0.7988826815642458,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 112,
+        "Classes": 5,
+        "Release Date": 0.18994413407821228,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 8,
+        "Classes": 5,
+        "Release Date": 0.09497206703910614,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 106,
+        "Classes": 0,
+        "Release Date": 0.18435754189944134,
+        "Last Changed": 14.5,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 19,
+        "Classes": 11,
+        "Release Date": 0.0,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 62,
+        "Classes": 11,
+        "Release Date": 0.16201117318435754,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 498,
+        "Classes": 6,
+        "Release Date": 0.547486033519553,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 101,
+        "Classes": 13,
+        "Release Date": 0.1787709497206704,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 5,
+        "Classes": 11,
+        "Release Date": 0.09497206703910614,
+        "Last Changed": 14.25,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 157,
+        "Classes": 9,
+        "Release Date": 0.3240223463687151,
+        "Last Changed": 14.55,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 777,
+        "Classes": 25,
+        "Release Date": 0.770949720670391,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 83,
+        "Classes": 0,
+        "Release Date": 0.1564245810055866,
+        "Last Changed": 14.25,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    },
+    {
+        "Champion": 350,
+        "Classes": 14,
+        "Release Date": 0.6871508379888268,
+        "Last Changed": 14.6,
+        "Blue Essence": 0.0,
+        "RP": 0.0
+    },
+    {
+        "Champion": 154,
+        "Classes": 4,
+        "Release Date": 0.2737430167597765,
+        "Last Changed": 14.65,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 238,
+        "Classes": 2,
+        "Release Date": 0.25139664804469275,
+        "Last Changed": 14.0,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 221,
+        "Classes": 6,
+        "Release Date": 0.8659217877094972,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 115,
+        "Classes": 13,
+        "Release Date": 0.2011173184357542,
+        "Last Changed": 14.15,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 26,
+        "Classes": 7,
+        "Release Date": 0.0111731843575419,
+        "Last Changed": 14.1,
+        "Blue Essence": 0.15384615384615385,
+        "RP": 0.45454545454545453
+    },
+    {
+        "Champion": 142,
+        "Classes": 1,
+        "Release Date": 0.5865921787709497,
+        "Last Changed": 14.45,
+        "Blue Essence": 0.7435897435897436,
+        "RP": 0.8671328671328671
+    },
+    {
+        "Champion": 143,
+        "Classes": 8,
+        "Release Date": 0.22905027932960895,
+        "Last Changed": 14.4,
+        "Blue Essence": 0.46153846153846156,
+        "RP": 0.7412587412587412
+    }
+]
