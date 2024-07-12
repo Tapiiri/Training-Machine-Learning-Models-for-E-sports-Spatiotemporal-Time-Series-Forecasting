@@ -67,7 +67,7 @@ def plot_prediction_on_plot(plot, points, prediction, truth, map_image_path, zoo
     plot_positions(prediction, prediction_points_size, prediction_points_color, 'P')
     plot_positions(truth, truth_points_size, truth_points_color, 'T')
 
-    denormalization_data_path = "old_denormalization_data.json"
+    denormalization_data_path = "denormalization_data.json"
     icons_folder = "champion_icons"
 
     # Get the champion class for the latest history sequence
