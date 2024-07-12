@@ -124,8 +124,6 @@ def fetch_data_batches(cursor, table_name, filter, offset, limit, data_features=
     total_row_offset = offsets[offset]
     total_row_limit = cumulative_sum - total_row_offset
     all_rows = get_data_by_compound_key(cursor, table_name, total_row_offset, total_row_limit, filter, data_features)
-    print(len(all_rows))
-    print(np.unique([row[4] for row in all_rows]))
     
     for i in range(len(counts))[offset:offset+limit]:
         result_offset = offsets[i] - total_row_offset
