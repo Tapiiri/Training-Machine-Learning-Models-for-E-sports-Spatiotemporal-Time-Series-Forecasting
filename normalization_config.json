@@ -1,0 +1,285 @@
+[
+    {
+        "column_enum": "game_id",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 3502081367
+        }
+    },
+    {
+        "column_enum": "time",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 179.98296
+        }
+    },
+    {
+        "column_enum": "name",
+        "normalization_type": "case",
+        "cases": {
+            "Yone": 1,
+            "Nocturne": 2,
+            "Katarina": 3,
+            "Ezreal": 4,
+            "Lux": 5,
+            "Nasus": 6,
+            "Gragas": 7,
+            "Talon": 8,
+            "Jinx": 9,
+            "Janna": 10,
+            "": 11
+        }
+    },
+    {
+        "column_enum": "hp",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 906.8586
+        }
+    },
+    {
+        "column_enum": "max_hp",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 947.3
+        }
+    },
+    {
+        "column_enum": "mana",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 704.4
+        }
+    },
+    {
+        "column_enum": "max_mana",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 704.4
+        }
+    },
+    {
+        "column_enum": "armor",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 57.08
+        }
+    },
+    {
+        "column_enum": "mr",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 42.02375
+        }
+    },
+    {
+        "column_enum": "ad",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 93.3725
+        }
+    },
+    {
+        "column_enum": "ap",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 43.0
+        }
+    },
+    {
+        "column_enum": "level",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 3
+        }
+    },
+    {
+        "column_enum": "atk_range",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 670.0
+        }
+    },
+    {
+        "column_enum": "visible",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 1
+        }
+    },
+    {
+        "column_enum": "team",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 200
+        }
+    },
+    {
+        "column_enum": "pos_x",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 3.4028235e+38
+        }
+    },
+    {
+        "column_enum": "pos_z",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 3.4028235e+38
+        }
+    },
+    {
+        "column_enum": "q_name",
+        "normalization_type": "case",
+        "cases": {
+            "YoneQ": 1,
+            "NocturneDuskbringer": 2,
+            "KatarinaQ": 3,
+            "EzrealQ": 4,
+            "LuxLightBinding": 5,
+            "NasusQ": 6,
+            "GragasQ": 7,
+            "TalonQ": 8,
+            "JinxQ": 9,
+            "HowlingGale": 10,
+            "YoneQ3": 11,
+            "GragasQToggle": 12
+        }
+    },
+    {
+        "column_enum": "q_cd",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 11.443878
+        }
+    },
+    {
+        "column_enum": "w_name",
+        "normalization_type": "case",
+        "cases": {
+            "YoneW": 1,
+            "NocturneShroudofDarkness": 2,
+            "KatarinaW": 3,
+            "EzrealW": 4,
+            "LuxPrismaticWave": 5,
+            "NasusW": 6,
+            "GragasW": 7,
+            "TalonW": 8,
+            "JinxW": 9,
+            "SowTheWind": 10
+        }
+    },
+    {
+        "column_enum": "w_cd",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 15.273926
+        }
+    },
+    {
+        "column_enum": "e_name",
+        "normalization_type": "case",
+        "cases": {
+            "YoneE": 1,
+            "NocturneUnspeakableHorror": 2,
+            "KatarinaEWrapper": 3,
+            "EzrealE": 4,
+            "LuxLightStrikeKugel": 5,
+            "NasusE": 6,
+            "GragasE": 7,
+            "TalonE": 8,
+            "JinxE": 9,
+            "EyeOfTheStorm": 10,
+            "LuxLightstrikeToggle": 11
+        }
+    },
+    {
+        "column_enum": "e_cd",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 26.376938
+        }
+    },
+    {
+        "column_enum": "r_name",
+        "normalization_type": "case",
+        "cases": {
+            "YoneR": 1,
+            "NocturneParanoia": 2,
+            "KatarinaR": 3,
+            "EzrealR": 4,
+            "LuxR": 5,
+            "NasusR": 6,
+            "GragasR": 7,
+            "TalonR": 8,
+            "JinxR": 9,
+            "ReapTheWhirlwind": 10
+        }
+    },
+    {
+        "column_enum": "r_cd",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": -0.37195492
+        }
+    },
+    {
+        "column_enum": "d_name",
+        "normalization_type": "case",
+        "cases": {
+            "SummonerTeleport": 1,
+            "SummonerSmite": 2,
+            "SummonerFlash": 3,
+            "SummonerHaste": 4,
+            "SummonerExhaust": 5
+        }
+    },
+    {
+        "column_enum": "d_cd",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 254.23727
+        }
+    },
+    {
+        "column_enum": "f_name",
+        "normalization_type": "case",
+        "cases": {
+            "SummonerFlash": 1,
+            "SummonerHeal": 2,
+            "SummonerExhaust": 3,
+            "SummonerTeleport": 4,
+            "SummonerDot": 5,
+            "SummonerHaste": 6
+        }
+    },
+    {
+        "column_enum": "f_cd",
+        "normalization_type": "expression",
+        "normalization_expression": "({column_name} / {max_value})",
+        "parameters": {
+            "max_value": 178.36739
+        }
+    }
+]
