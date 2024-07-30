@@ -6,9 +6,17 @@ from tqdm import tqdm
 from typing import Any, Dict, List
 
 from constants import DB_columns, DEFAULT_DATA_FEATURES
+
+# Get table columns
+def get_table_columns(cursor, table_name):
+    cursor.execute(f"PRAGMA table_info({table_name})")
+    columns = cursor.fetchall()
+    return columns
+
 # In-memory cache
 cache: Dict[str, Any] = {
-    "counts": {}
+    "counts": {},
+    "keys": {}
 }
 
 # Function to create cache table if it doesn't exist
@@ -56,7 +64,46 @@ def save_count_to_cache(cursor, table_name, filter, counts):
         "counts": counts
     }
 
-def get_counts(cursor, table_name, filter, limit=None, offset=None, recreate_cache=False):
+
+# Get amount of unique keys in a table
+def get_unique_key_count(cursor, table_name, filter="1=1"):
+    global cache
+
+    # Create cache table if it doesn't exist
+    create_cache_table(cursor)
+
+    count_query = f"""
+        SELECT COUNT(DISTINCT {DB_columns.COMPOUND_KEY.value})
+        FROM {table_name}
+        WHERE {filter}
+    """
+        
+    # Check in-memory cache
+    if count_query in cache["keys"]:
+        print("Using in-memory cache for keys")
+        keys = cache["keys"][count_query]
+        return keys
+
+    # Check database cache
+    keys = fetch_count_from_cache(cursor, table_name, count_query)
+
+    if keys is not None:
+        print("Using database cache for key count")
+        cache["keys"][count_query] = keys
+        return keys
+
+    print("Counting keys...")
+    cursor.execute(count_query)
+    key_count = cursor.fetchone()[0]
+    print(f"Key count: {key_count}")
+
+    # Save results to cache table
+    save_count_to_cache(cursor, table_name, count_query, key_count)
+
+    return key_count
+
+
+def get_counts(cursor, table_name, filter="1=1", limit=None, offset=None, recreate_cache=False):
     global cache
     
     if recreate_cache:
@@ -121,7 +168,7 @@ def fetch_data_batches(cursor, table_name, filter, offset, limit, data_features=
         cumulative_sum += count[0]
     
     rows_per_key = defaultdict(list)
-    total_row_offset = offsets[offset]
+    total_row_offset = offsets[min(offset, len(offsets)-1)]
     total_row_limit = cumulative_sum - total_row_offset
     all_rows = get_data_by_compound_key(cursor, table_name, total_row_offset, total_row_limit, filter, data_features)
     

@@ -1,7 +1,7 @@
 from collections import defaultdict
 import sqlite3
 import numpy as np
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 from constants import DEFAULT_DATA_FEATURES
 from utils.get_data import fetch_data_batches
 from utils.create_sequences_in_batches import create_sequences_from_database_rows
@@ -12,7 +12,7 @@ def shape_input_for_model(X, data_features, features, input_shape):
     X_features = X[:, :, [data_features.index(feature) for feature in features]]
     return X_features.reshape(input_shape)
 
-def compare_models(database_file, table_name, H_values, T_values, model_getters, data_features=DEFAULT_DATA_FEATURES, filter="1=1", total_keys_to_fetch=100, batch_size=20, train=True):
+def compare_models(database_file, table_name, H_values, T_values, model_getters, data_features=DEFAULT_DATA_FEATURES, labels=DEFAULT_DATA_FEATURES, filter="1=1", total_keys_to_fetch=100, batch_size=20, train=True):
     training_errors = defaultdict(list)
     validation_errors = defaultdict(list)
     trained_models = {}
@@ -41,8 +41,9 @@ def compare_models(database_file, table_name, H_values, T_values, model_getters,
         for H in H_values:
             for T in tqdm(T_values, desc=f'H={H}', leave=False):
                 # Calculate the sequence on the fly
+                label_indices = [data_features.index(label) for label in labels]
                 sequence = create_sequences_from_database_rows(
-                    data, H, T, max_H, max_T)
+                    data, H, T, max_H, max_T, label_indices=label_indices)
                 X, y = sequence
                 X_train, X_test, y_train, y_test = train_test_split(
                     X, y, test_size=0.2, train_size=0.8, shuffle=True)

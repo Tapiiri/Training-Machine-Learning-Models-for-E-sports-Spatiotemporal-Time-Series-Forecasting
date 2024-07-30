@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 
 
-def create_sequences(rows, H, T):
+def create_sequences(rows, H, T, label_indices=[0,1]):
     num_sequences = len(rows) - H - T + 1
     if num_sequences <= 0:
         return np.array([]), np.array([])
@@ -11,12 +11,12 @@ def create_sequences(rows, H, T):
     X = np.lib.stride_tricks.sliding_window_view(  # type: ignore
         rows, window_shape=(H, rows.shape[1]))[:-T]
     X = X.reshape(X.shape[0], H, -1)
-    y = rows[H+T-1:num_sequences+H+T-1][:, :2]
+    y = rows[H+T-1:num_sequences+H+T-1][:, label_indices]
 
     return X, y
 
 
-def create_sequences_from_database_rows(data, H, T, max_H=None, max_T=None, batch_size=1000):
+def create_sequences_from_database_rows(data, H, T, max_H=None, max_T=None, batch_size=1000, label_indices=[0,1]):
     max_H = max_H or H
     max_T = max_T or T
 
@@ -31,7 +31,7 @@ def create_sequences_from_database_rows(data, H, T, max_H=None, max_T=None, batc
             # Ensure all sequences are from the same points in time
             equilength_rows = np.array(rows[:max_row_amount])[
                 max_H-H:-(max_T-T+1)]
-            _X, _y = create_sequences(equilength_rows, H, T)
+            _X, _y = create_sequences(equilength_rows, H, T, label_indices)
             if _X.size > 0 and _y.size > 0:
                 X_list.append(_X)
                 y_list.append(_y)
